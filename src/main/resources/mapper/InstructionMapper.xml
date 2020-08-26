@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mp.mapper.InstructionMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.example.mp.entity.Instruction">
+		<id column="id" property="id" />
+		<result column="create_time" property="createTime" />
+		<result column="update_time" property="updateTime" />
+		<result column="version" property="version" />
+		<result column="deleted" property="deleted" />
+		<result column="bet_amount" property="betAmount" />
+		<result column="bet_single_or_double" property="betSingleOrDouble" />
+		<result column="bet_session" property="betSession" />
+		<result column="bet_session_name" property="betSessionName" />
+		<result column="bet_status" property="betStatus" />
+		<result column="bet_htn" property="betHtn" />
+		<result column="bet_atn" property="betAtn" />
+		<result column="bet_number" property="betNumber" />
+		<result column="bet_time" property="betTime" />
+		<result column="bet_session_two" property="betSessionTwo" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, create_time AS createTime, update_time AS updateTime, version, deleted, bet_amount AS betAmount, bet_single_or_double AS betSingleOrDouble, bet_session AS betSession, bet_session_name AS betSessionName, bet_status AS betStatus, bet_htn AS betHtn, bet_atn AS betAtn, bet_number AS betNumber, bet_time AS betTime, bet_session_two AS betSessionTwo
+    </sql>
+
+</mapper>

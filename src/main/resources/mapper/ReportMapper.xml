@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mp.mapper.ReportMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.example.mp.entity.Report">
+		<id column="id" property="id" />
+		<result column="year" property="year" />
+		<result column="month" property="month" />
+		<result column="quiz_type" property="quizType" />
+		<result column="create_time" property="createTime" />
+		<result column="amount" property="amount" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, year, month, quiz_type AS quizType, create_time AS createTime, amount
+    </sql>
+
+</mapper>
