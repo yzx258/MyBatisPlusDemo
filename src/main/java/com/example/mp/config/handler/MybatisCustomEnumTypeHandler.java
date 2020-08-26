@@ -31,7 +31,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @copyright: Copyright (c) 2020
  * @company: 厦门宜车时代信息技术有限公司
  * @version: 1.0
- * @author: ruansheng
+ * @author: 俞春旺
  * @date: 2020-04-26
  */
 @Slf4j
